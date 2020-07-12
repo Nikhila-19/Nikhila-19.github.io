@@ -1,0 +1,576 @@
+00<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from artmonious.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Sep 2017 10:51:33 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="image/favicon.png" rel="icon" type="image/png" />
+	<title>ABOUT US</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no">
+	<style type="text/css">.error{
+  color:red;
+}
+
+label[for*="phn"].error {
+position: absolute;
+background: #eee;
+left: 0;
+right: 0;
+}
+
+.list-inline li:nth-child(1) label[for*="phn"].error {
+z-index: 1000;
+}
+
+.list-inline li:nth-child(2) label[for*="phn"].error {
+z-index: 999;
+}
+
+.list-inline li:nth-child(3) label[for*="phn"].error {
+z-index: 998;
+}
+
+.swal2-title {
+font-size: 22px !important;
+}
+
+input[type="radio"][id*=type] {
+position: absolute;
+margin-left: -30px;
+}
+	</style>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><script src="../ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script><script>
+     
+            (function ($, W, D)
+            {
+                var JQUERY4U = {};
+                JQUERY4U.UTIL =
+                        {
+                            setupFormValidation: function ()
+                            {
+                                //form validation rules
+                                $("#mailfrom").validate({
+                                    rules: {
+                                          fname: {
+                                            required: true
+                                           
+                                        },
+                                        lname: {
+                                            required: true
+                                           
+                                        },
+                                        email_add: {
+                                            required: true
+                                           
+                                        },
+                                        phn1no1: {
+                                            required: true,
+                                            minlength:3,
+                                            maxlength:3,
+                                            number: true
+                                           
+                                        },
+                                        phn2no2: {
+                                            required: true,
+                                            minlength:3,
+                                            maxlength:3,
+                                            number: true
+                                           
+                                        },
+                                        phn3no3: {
+                                            required: true,
+                                            minlength:4,
+                                            maxlength:4,
+                                            number: true
+                                           
+                                        },
+                                        socialnm: {
+                                            required: true
+                                           
+                                        }
+                                        
+                                        
+                                        
+                                         
+                   },
+
+
+                                    messages: {
+                                        fname :{
+                                        required: "Please Enter First Name."
+                                      
+                                      },
+                                      lname :{
+                                        required: "Please Enter Last Name."
+                                      
+                                      },
+                                      email_add :{
+                                        required: "Please Enter Email Address."
+                                      
+                                      },
+                                      phn1no1 :{
+                                        required: "Please Enter Phone No."
+                                      
+                                      },
+                                      phn2no2 :{
+                                        required: "Please Enter Phone No."
+                                      
+                                      },
+                                      phn3no3 :{
+                                        required: "Please Enter Phone No."
+                                      
+                                      },
+                                       
+                                      socialnm :{
+                                        required: "Please Select One."
+                                      
+                                      },
+                                     
+                                      
+                                 
+                                    },
+                  
+                                    submitHandler: function (form) {
+                                        form.submit();
+                                    }
+                                });
+                            }
+                        }
+
+                //when the dom has loaded setup form validation rules
+                $(D).ready(function ($) {
+                    JQUERY4U.UTIL.setupFormValidation();
+                });
+            })(jQuery, window, document);
+        </script>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+	<link href="css/bootstrap-slider.css" rel="stylesheet" type="text/css" /><!--[if lt IE 9]>
+
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+        <![endif]-->
+	<link href="../cdn.jsdelivr.net/sweetalert2/6.1.1/sweetalert2.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="../cdn.jsdelivr.net/sweetalert2/6.1.1/sweetalert2.min.js"></script><script type="text/javascript">
+  jQuery(function() {
+    setTimeout(function() {
+      jQuery("button.swal2-confirm.swal2-styled").click(function() {
+        location.href="index.html"
+      });
+    }, 1000);
+    function getUrlVars() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+      function(m,key,value) {
+        vars[key] = value;
+      });
+      return vars;
+    }
+    var fType = getUrlVars()["success"];
+    if(fType == 1) {
+      swal({
+        title: 'Thank you, we received your information.',
+        timer: 2000
+      }).then(
+        function () {},
+        // handling the promise rejection
+        function (dismiss) {
+          if (dismiss === 'timer') {
+            location.href="index.html"
+          }
+        }
+      )
+
+    }
+  });
+  </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76745100-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<meta name="description" content="Connecting artists and collectors from around the world, one artwork at a time" /></head>
+<body><!-- Start header Section-->
+<nav id="navigation-top">
+<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../basecamp/index.html">BASECAMP BEVERAGES</a></li>
+	<li><a href="../apollo/index.html">APOLLO APPETIZERS</a></li>
+	<li><a href="../meteorite/index.html">METEORITE MAIN COURSE</a></li>
+	<li><a href="../desserts/index.html">DESERTED DESSERTS</a></li>
+</ul>
+</nav>
+
+<section id="banner2">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="overlay1">
+
+</div>
+</div>
+
+<div class="col-md-6"></div>
+</div>
+</div>
+</section>
+<!-- End header Section--><!-- Start Artimonious Section-->
+
+<section id="banner1">
+<div class="container">
+<div class="row">
+<div class="col-md-12"><img alt="..." class="img-responsive pull-right" src="image/" /></div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<h3 id="about">ABOUT CELESTIAL CONNOISSUER</h3>
+</div>
+<p align=justify><font color=blue size=3>Welcome to our celestial world of food!
+A world of magic where you carry the taste not only on your tongue but preserve it inyour heart.
+Here, we safguard our old identity and culture and reflect on who we were while enjoying the bounty of Mars!
+Our dishes and ideas are inspired from the past which strike you with a sense of nostalgia.
+Our unique menu speaks of the unmatched quality we are bound to deliver.
+We believe in you to believe in us!
+</font></p></div>
+<div class="row">
+<div class="col-md-12">
+<p><video controls autoplay src="restaurant.mp4"  height=800 width=1000 loop></p>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-12">
+<p></p>
+</div>
+</div>
+
+
+</section>
+<!-- End Artimonious Section--><!-- Start work Section-->
+
+<section id="work">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 id="howitworks">HOW WE WORK</h3>
+</div>
+</div>
+
+<div class="space70 hidden-sm hidden-xs"></div>
+
+<div class="row">
+<div class="col-sm-3"><img src="image/Layer-18.png" />
+<p>We work simply as a fast food chain restaurant that provides you with both online delivery and a dine in sitting.We believe making food is too an art form and a reflection of our culture.</p>
+</div>
+
+<div class="col-sm-3"><img src="image/layer19.png" />
+<p>At our place, Chefs are not only people responsible for making this place what it is is!</p>
+</div>
+
+<div class="col-sm-3"><img src="image/Layer-19.png" />
+<p>Our designs and ideas are inspired from the past, which gives you a sense of familiarity.Trajectory Tea is inspired by the Ferris Wheel as is Propulsion Pulao inspired from Sizzling Sizzlers! </p>
+</div>
+
+<div class="col-sm-3"><img src="image/Forma-1.png" />
+<p>It is the output of the hardwork of artists and designers! This collaboration between diverse forms of art is what we cherish!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- End work Section--><!--start work section-->
+
+<section id="works">
+<div class="container pad0">
+<div class="row margin0">
+<div class="come_here"></div>
+
+<div class="col-sm-6 column pad0">
+<div class="content">
+<h2>BASECAMP BEVERAGES</h2>
+
+<ul>
+	<li>Our Signature Beverages ranging from Hot Coffee to Tea</li>
+	<li>Give a boost to your dopamine levels!</li>
+	<li>Enjoy the exotic ideas inculcated into them</li>
+	<li>Created right from the botom of our hearts and henceforth christened 'basecamp' beverages.</li>
+	
+</ul>
+</div>
+</div>
+
+<div class="col-sm-6 column go_there pad0"><img class="img-responsive move_img" src="image/beverage.png" width="100%;" /></div>
+</div>
+
+<div class="row margin0">
+<div class="col-sm-6 column pad0"><img class="img-responsive" src="image/apollo.png" width="100%;" /></div>
+
+<div class="col-sm-6 column pad0">
+<div class="content">
+<h2>APOLLO APPETIZERS</h2>
+
+<ul>
+	<li>Who doesn't love appetizers!?</li>
+	<li>We present to you the martian pizza, the supernova sandwich and the crater chaat.</li>
+	<li>All inspired from the past with a tangy twist!</li>
+	<li>This tangy twist is what makes it the food of Mars.</li>
+	
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row margin0">
+<div class="come_here1"></div>
+
+<div class="col-sm-6 column pad0">
+<div class="content">
+<h2>METEORITE MAIN COURSE</h2>
+
+<ul>
+	<li>Boring they seem, don't they?</li>
+	<li> We make them fun by adding an artistic touch.</li>
+	<li>Breads and lentils and rice...we add to them the spice!</li>
+	<li>That too available at an affordable price!
+</li>
+</ul>
+</div>
+</div>
+
+<div class="col-sm-6 column go_there1 pad0"><img class="img-responsive move_img" src="image/meteorite.png" width="100%;" /></div>
+</div>
+</div>
+
+
+
+<div class="row margin0">
+<div class="col-sm-6 column pad0"><img class="img-responsive" src="image/dd.png" width="100%;" /></div>
+
+<div class="col-sm-6 column pad0">
+<div class="content">
+<h2>DESERTED DESSERTS</h2>
+
+<ul>
+	<li>The reward at the end of a meal is definately a superb dessert.</li>
+	<li>When the sweet tooth comes a-knockin', dish up one of these luscious desserts.</li>
+	<li>No added flavours, only the true and natural ones..our fruits! </li>
+	<li>Options and various variations as always up for grabs!</li>
+	
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row margin0">
+<div class="come_here1"></div>
+
+
+
+
+</section>
+<!-- end works section -->
+
+<div class="space100 hidden-xs hidden-sm"></div>
+<!-- Start grid4 section-->
+
+<section id="images">
+<div class="container">
+<div class="row">
+<div class="col-sm-3 grid4_content"><img alt="..." class="img-responsive center-block" src="image/bb.png" /></div>
+
+<div class="col-sm-3 grid4_content"><img alt="..." class="img-responsive center-block" src="image/aa.png" /></div>
+
+<div class="col-sm-3 grid4_content"><img alt="..." class="img-responsive center-block" src="image/m.png" /></div>
+
+<div class="col-sm-3 grid4_content"><img alt="..." class="img-responsive center-block" src="image/dd.png" /></div>
+</div>
+</div>
+</section>
+<!-- End grid4 section--><!-- start Notification section -->
+
+<section id="Notification">
+<div class="container">
+<form action="https://artmonious.com/mail.php" id="mailfrom" method="post">
+<div class="row">
+<div class="col-sm-12">
+<h2 id="getnote">GET NOTIFIED WHEN WE LAUNCH</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="row">
+<div class="col-sm-8 col-md-9 col-xs-12">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group"><label for="f_name">Name</label> <input class="form-control" id="fname" name="fname" type="text" />
+<h4>First Name</h4>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="form-group"><label for="l_name">&nbsp;</label> <input class="form-control" id="lname" name="lname" type="text" />
+<h4>Last Name</h4>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group"><label for="f_name">Email</label> <input class="form-control" id="email_add" name="email_add" type="email" /></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group"><label for="f_name">Subject</label> <input class="form-control" id="subjecttx" name="subjecttx" type="text" /></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group"><label for="f_name">Message</label><textarea class="form-control" id="msgtx" name="msgtx" rows="5"></textarea></div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4 padding-right-0 col-md-3 col-xs-12">
+<div class="row">
+<div class="col-sm-12">
+<h4 class="margin_top">Phone</h4>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<ul class="list-inline">
+	<li>
+	<div class="form-group"><input class="form-control" id="phn1no1" name="phn1no1" type="text" />
+	<h4>(###)</h4>
+	</div>
+	</li>
+	<li>
+	<div class="form-group"><input class="form-control" id="phn2no2" name="phn2no2" type="text" />
+	<h4>###</h4>
+	</div>
+	</li>
+	<li>
+	<div class="form-group"><input class="form-control" id="phn3no3" name="phn3no3" type="text" />
+	<h4>####</h4>
+	</div>
+	</li>
+</ul>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group"><label for="f_name">How did you find out about Celestial Connoisseur?</label> <select class="form-control" id="socialnm" name="socialnm"><option value="">Please Select</option><option value="Facebook">Facebook</option><option value="Instagram">Instagram</option><option value="Google">Google</option><option value="Art event">Food Events</option><option value="Family or friend">Family or Friend</option> </select></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<h4 class="space10">Are you a Connoisseur, Fastidious, Gourmet or Food Nerd?</h4>
+
+<div class="checkbox">
+<nav>
+<ul>
+	<li><label><input id="type1" name="whattype" type="radio" value="Artist" />Connoisseur</label></li>
+	<li><label><input id="type2" name="whattype" type="radio" value="Collector" />Fastidious</label></li>
+	<li><label><input id="type3" name="whattype" type="radio" value="Gallery" />Gourmet</label></li>
+	<li><label><input id="type3" name="whattype" type="radio" value="Gallery" />FoodNerd</label></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><button class="btn btn-submit" id="send_msg" name="send_msg" type="submit">Submit</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- end Notification section --><!--End notify section--><!--Start banner section -->
+
+<section id="launch">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2>Launching on July 13th, 2020</h2>
+</div>
+</div>
+</div>
+</section>
+<!--End banner section --><!--Start footer section -->
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<ul class="list-inline">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<ul class="list-inline">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<!--End footer section --><!-- jQuery (necessary for Bootstrap's JavaScript plugins) --><script src="js/jquery-1.12.0.js"></script><script src="js/bootstrap.js"></script><script type="text/javascript">
+
+    $(document).ready(function(){
+      if ($(window).width() < 767) {
+        $(".go_there").prependTo($(".come_here"));
+        $(".go_there1").prependTo($(".come_here1"));
+       }
+
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top - 60
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+
+<div id="social"></div>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0336'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<!-- Mirrored from artmonious.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Sep 2017 10:51:50 GMT -->
+</html>

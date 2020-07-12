@@ -1,0 +1,175 @@
+.navbar {
+  overflow: hidden;
+  background-color: White; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #DADADA;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #D2D2D2;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+background-color: #DADADA;
+  color: black;}
+
+
+/* Style the header */
+.header {
+  background-color:none;
+  padding: 5px;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+background-color:transparent}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-image:url("bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  Margin:10px}
+
+h1
+{font-family:OCR A Std,monospace;
+color:white}
+
+h2
+{font-family:Bradley Hand, cursive;
+color:white;
+font-size:35px}
+
+h3
+{font-family:Courier, monospace	;
+color:white;
+font-size:15px}
+
+h4
+{font-family:Stencil Std, fantasy;
+color:white;
+font-size:22px}
+
+#nav {
+list-style:none inside;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+#nav li {
+display:block;
+position:relative;
+float:left;
+background:White; /* menu background color */
+}
+
+#nav li a {
+display:block;
+padding:0;
+text-decoration:none;
+width:173px; /* this is the width of the menu items */
+line-height:25px; /* this is the hieght of the menu items */
+color:black; /* list item font color */
+}
+
+#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
+#nav li:hover {background:#d2d2d2;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+#nav ul {
+position:absolute;
+padding:0;
+left:0;
+display:none; /* hides sublists */
+}
+
+#nav li:hover ul ul {display:none;} /* hides sub-sublists */
+#nav li:hover ul {display:block;} /* shows sublist on hover */
+#nav li li:hover ul {display:block; /* shows sub-sublist on hover */
+margin-left:173px; /* this should be the same width as the parent list item */
+margin-top:-35px; /* aligns top of sub menu with top of list item */
+}
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+div.gallery {
+  margin: 2px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 167px;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 167;
+  height: 150;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
